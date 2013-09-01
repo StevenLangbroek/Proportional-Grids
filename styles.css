@@ -50,12 +50,12 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
     margin-bottom: 0; }
 
 /* -- Setup grids with base class -- */
-.grid-wrap {
+.grid__wrap {
   margin-left: -3em;
   overflow: hidden;
   clear: both; }
 
-.grid-col {
+.grid__col {
   float: left;
   padding-left: 3em;
   width: 100%;
@@ -63,126 +63,126 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.large-gutter {
+.grid__wrap--large-gutter {
   margin-left: -6em; }
-  .large-gutter .grid-col {
+  .grid__wrap--large-gutter .grid__col {
     padding-left: 6em; }
 
-.half-gutter {
+.grid__wrap--half-gutter {
   margin-left: -1.5em; }
-  .half-gutter .grid-col {
+  .grid__wrap--half-gutter .grid__col {
     padding-left: 1.5em; }
 
-.no-gutter {
+.grid__wrap--no-gutter {
   margin-left: 0; }
-  .no-gutter .grid-col {
+  .grid__wrap--no-gutter .grid__col {
     padding-left: 0; }
 
-.reset-gutter {
+.grid__wrap--reset-gutter {
   margin-left: -3em; }
-  .reset-gutter .grid-col {
+  .grid__wrap--reset-gutter .grid__col {
     padding-left: 3em; }
 
-ul.grid-wrap,
-ol.grid-wrap {
+ul.grid__wrap,
+ol.grid__wrap {
   padding-left: 0;
   list-style: none; }
 
-li.grid-col {
+li.grid__col {
   margin-left: 0;
   margin-bottom: 0; }
 
-.col-full,
-.col-set-full .grid-col {
+.grid__col--full,
+.grid__col--set-full .grid__col {
   width: 100%; }
 
-.col-one-half,
-.col-set-one-half .grid-col {
+.grid__col--one-half,
+.grid__col--set-one-half .grid__col {
   width: 50%; }
 
-.col-one-third,
-.col-set-one-third .grid-col {
+.grid__col--one-third,
+.grid__col-set-one-third .grid__col {
   width: 33.333%; }
 
-.col-one-quarter,
-.col-set-one-quarter .grid-col {
+.grid__col--one-quarter,
+.grid__col--set-one-quarter .grid__col {
   width: 25%; }
 
-.col-two-thirds {
+.grid__col--two-thirds {
   width: 66.666%; }
 
-.col-three-quarters {
+.grid__col--three-quarters {
   width: 75%; }
 
 /* -- Breakpoint (.bp1)
 ------------------------------------------------------------- */
 @media only screen and (min-width: 30em) {
-  .bp1-col-full,
-  .bp1-col-set-full .grid-col {
+  .bp1-col--full,
+  .bp1-col--set-full .grid__col {
     width: 100%; }
 
-  .bp1-col-one-half,
-  .bp1-col-set-one-half .grid-col {
+  .bp1-col--one-half,
+  .bp1-col--set-one-half .grid__col {
     width: 50%; }
 
-  .bp1-col-one-third,
-  .bp1-col-set-one-third .grid-col {
+  .bp1-col--one-third,
+  .bp1-col-set-one-third .grid__col {
     width: 33.333%; }
 
-  .bp1-col-one-quarter,
-  .bp1-col-set-one-quarter .grid-col {
+  .bp1-col--one-quarter,
+  .bp1-col--set-one-quarter .grid__col {
     width: 25%; }
 
-  .bp1-col-two-thirds {
+  .bp1-col--two-thirds {
     width: 66.666%; }
 
-  .bp1-col-three-quarters {
+  .bp1-col--three-quarters {
     width: 75%; } }
 /* -- Breakpoint 2 (.bp2)
 ------------------------------------------------------------- */
 @media only screen and (min-width: 48em) {
-  .bp2-col-full,
-  .bp2-col-set-full .grid-col {
+  .bp2-col--full,
+  .bp2-col--set-full .grid__col {
     width: 100%; }
 
-  .bp2-col-one-half,
-  .bp2-col-set-one-half .grid-col {
+  .bp2-col--one-half,
+  .bp2-col--set-one-half .grid__col {
     width: 50%; }
 
-  .bp2-col-one-third,
-  .bp2-col-set-one-third .grid-col {
+  .bp2-col--one-third,
+  .bp2-col-set-one-third .grid__col {
     width: 33.333%; }
 
-  .bp2-col-one-quarter,
-  .bp2-col-set-one-quarter .grid-col {
+  .bp2-col--one-quarter,
+  .bp2-col--set-one-quarter .grid__col {
     width: 25%; }
 
-  .bp2-col-two-thirds {
+  .bp2-col--two-thirds {
     width: 66.666%; }
 
-  .bp2-col-three-quarters {
+  .bp2-col--three-quarters {
     width: 75%; } }
 /* -- Breakpoint 3 (.bp3)
 ------------------------------------------------------------- */
 @media only screen and (min-width: 60em) {
-  .bp3-col-full,
-  .bp3-col-set-full .grid-col {
+  .bp3-col--full,
+  .bp3-col--set-full .grid__col {
     width: 100%; }
 
-  .bp3-col-one-half,
-  .bp3-col-set-one-half .grid-col {
+  .bp3-col--one-half,
+  .bp3-col--set-one-half .grid__col {
     width: 50%; }
 
-  .bp3-col-one-third,
-  .bp3-col-set-one-third .grid-col {
+  .bp3-col--one-third,
+  .bp3-col-set-one-third .grid__col {
     width: 33.333%; }
 
-  .bp3-col-one-quarter,
-  .bp3-col-set-one-quarter .grid-col {
+  .bp3-col--one-quarter,
+  .bp3-col--set-one-quarter .grid__col {
     width: 25%; }
 
-  .bp3-col-two-thirds {
+  .bp3-col--two-thirds {
     width: 66.666%; }
 
-  .bp3-col-three-quarters {
+  .bp3-col--three-quarters {
     width: 75%; } }

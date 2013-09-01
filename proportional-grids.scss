@@ -6,8 +6,8 @@
 $grid-gutter: 3em;
 
 // this sets your class names
-$grid-wrap-class: "grid-wrap";
-$grid-col-class: "grid-col";
+$grid-wrap-class: "grid__wrap";
+$grid-col-class: "grid__col";
 
 //-------------------------------------------------------
 // GRID MIXINS
@@ -36,16 +36,16 @@ $grid-col-class: "grid-col";
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-  .large-gutter {
+  .grid__wrap--large-gutter {
     @include set-gutter($grid-gutter*2); }
 
-  .half-gutter {
+  .grid__wrap--half-gutter {
     @include set-gutter($grid-gutter/2); }
 
-  .no-gutter {
+  .grid__wrap--no-gutter {
     @include set-gutter(0); }
 
-  .reset-gutter {
+  .grid__wrap--reset-gutter {
     @include set-gutter($grid-gutter); }
 
   // reset for list grids
@@ -64,21 +64,21 @@ $grid-col-class: "grid-col";
 // $namespace relates to the class prefix e.g. bp2-col to target breakpoint 2
 @mixin grid-setup($namespace) {
 
-  .#{$namespace}-full,
-  .#{$namespace}-set-full .#{$grid-col-class} {
+  .#{$namespace}--full,
+  .#{$namespace}--set-full .#{$grid-col-class} {
     width: 100%; }
-  .#{$namespace}-one-half,
-  .#{$namespace}-set-one-half .#{$grid-col-class} {
+  .#{$namespace}--one-half,
+  .#{$namespace}--set-one-half .#{$grid-col-class} {
     width: 50%; }
-  .#{$namespace}-one-third,
+  .#{$namespace}--one-third,
   .#{$namespace}-set-one-third .#{$grid-col-class} {
     width: 33.333%; }
-  .#{$namespace}-one-quarter,
-  .#{$namespace}-set-one-quarter .#{$grid-col-class} {
+  .#{$namespace}--one-quarter,
+  .#{$namespace}--set-one-quarter .#{$grid-col-class} {
     width: 25%; }
-  .#{$namespace}-two-thirds {
+  .#{$namespace}--two-thirds {
     width: 66.666%; }
-  .#{$namespace}-three-quarters {
+  .#{$namespace}--three-quarters {
     width: 75%; }
 
 }
@@ -106,21 +106,21 @@ $grid-col-class: "grid-col";
 @mixin grid-setup-oldie($namespace) {
 
   .lt-ie8 {
-    .#{$namespace}-full,
-    .#{$namespace}-set-full .#{$grid-col-class} {
+    .#{$namespace}--full,
+    .#{$namespace}--set-full .#{$grid-col-class} {
       width: 99.95%; }
-    .#{$namespace}-one-half,
-    .#{$namespace}-set-one-half .#{$grid-col-class} {
+    .#{$namespace}--one-half,
+    .#{$namespace}--set-one-half .#{$grid-col-class} {
       width: 47.45%; }
-    .#{$namespace}-one-third,
-    .#{$namespace}-set-one-third .#{$grid-col-class} {
+    .#{$namespace}--one-third,
+    .#{$namespace}--set-one-third .#{$grid-col-class} {
       width: 29.55%; }
-    .#{$namespace}-two-thirds {
+    .#{$namespace}--two-thirds {
       width: 64.95%; }
-    .#{$namespace}-one-quarter,
-    .#{$namespace}-set-one-quarter .#{$grid-col-class} {
+    .#{$namespace}--one-quarter,
+    .#{$namespace}--set-one-quarter .#{$grid-col-class} {
       width: 19.95%; }
-    .#{$namespace}-three-quarters {
+    .#{$namespace}--three-quarters {
       width: 74.95%; }
   }
 	
